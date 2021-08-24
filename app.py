@@ -2,9 +2,10 @@ from flask import Flask, render_template, request
 import joblib
 import pandas as pd
 import nltk
-# nltk.download('punkt') - put back when deploying Heroku
-# nltk.download('stopwords')
-# nltk.download('wordnet')
+#  put back when deploying Heroku the nltk punkt, stopwords and wordnet
+nltk.download('punkt') 
+nltk.download('stopwords')
+nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
